@@ -1,0 +1,82 @@
+p{
+    font-size: 20px;
+    color: green;
+}
+.header{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+   
+    color: green;
+}
+
+.header img{
+    width: 20%;
+   
+   
+    
+}
+.header  img{
+    width: 20%;
+}
+
+.prueba{
+    width: 60%;
+   
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.derechaheader{
+    width: 20%;
+}
+
+.main{
+    background-color: greenyellow;
+}
+
+.barra{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer{
+
+    display: flex;
+   
+    width: 100%;
+
+ 
+}
+
+.negro{
+    width: 80%;
+   height: 25px;
+    background-color: black;
+}
+
+.contenedorFlor{
+    width: 20%;
+    
+}
+
+.print p{
+    font-size: 0;
+    
+}
+@media print {
+    /* Aquí irían tus reglas CSS específicas para imprimir */
+
+    .print p{
+        font-size: 1rem;
+    
+    }
+
+}   

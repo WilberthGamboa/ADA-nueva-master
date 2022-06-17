@@ -1,0 +1,42 @@
+
+
+
+main{
+    display: flex;
+    
+    
+
+}
+form{
+ 
+    position: flex;
+    align-content: center;
+    align-items: center;
+    
+    
+    width: 100%;
+  
+ 
+   
+    padding: 15px;
+    box-shadow: 0 1rem 1rem  rgba(53, 216, 225, 0.3);
+    background-color:green;
+    backdrop-filter: blur(1rem);
+    border-radius: 5px;
+    color: white;
+}
+
+.print p{
+    font-size: 0;
+    
+}
+@media print {
+    /* Aquí irían tus reglas CSS específicas para imprimir */
+
+    .print p{
+        font-size: 1rem;
+    
+    }
+
+}   
+

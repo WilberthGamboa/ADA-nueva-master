@@ -1,0 +1,219 @@
+.grilla{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+   
+
+}
+
+.header{
+  grid-column: 1/4;
+    display: flex;
+    flex-wrap: nowrap;
+   
+}
+.header img{
+    width: 20%;
+}
+.header h1{
+    width: 60vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.headerLatereal{
+    width: 20%;
+}
+
+
+.lateralIzquierdo{
+    grid-column: 1/2;
+    background-color: greenyellow;
+}
+.lateralDerecho{
+    background-color: greenyellow;
+    grid-column: 3/4;
+    
+}
+
+.main{
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+  
+   
+   
+}
+.info{
+    display: flex;
+    justify-content: center;
+   align-items: center;
+    
+}
+.info p{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    color: green;
+    
+  
+    
+   
+
+}
+.info img {
+    width: 20%;
+    margin-top: 2%;
+    border-radius: 10%;
+}
+.info a{
+    display: flex;
+    width: 20%;
+ 
+   
+}
+/*
+.nav{
+    grid-column: 1/4;
+    display: flex;
+    justify-content: center;
+}*/
+
+.apartados{
+    grid-column: 1/4;
+    display: flex;
+   
+    justify-content: center;
+  
+   
+    background-color: coral;
+}
+
+.apartados a{
+    text-decoration: none;
+    color: white;
+}
+
+.apartados a:hover{
+    color: black;
+}
+.footer{
+    grid-column: 1/4;
+    display: flex;
+    
+}
+
+
+.barranegra{
+    width: 70vw;
+    background-color: black;
+ 
+}
+
+.footer img {
+    width: 30vw;
+    height: 25px;
+    
+    
+}
+
+.print p{
+    font-size: 0;
+
+}
+
+.info a{
+    text-decoration: none;
+    color: green;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.info a:hover{
+    color: black;
+}
+
+@media print {
+    /* Aquí irían tus reglas CSS específicas para imprimir */
+
+    .print p{
+        font-size: 1rem;
+    
+    }
+
+}    
+
+
+@media (max-width: 768px){
+    .main{
+        background-color: burlywood;
+    }
+    p{
+        font-size: .8rem;
+    }
+    .header img{
+        width: 0;
+    }
+
+    .headerLatereal{
+        width: 0;
+    }
+    .header h1{
+        width: 100vw;
+    }
+
+    .info{
+        flex-direction: column;
+    }
+
+    .lateralDerecho{
+        grid-column: 0/0;
+    }
+    .lateralIzquierdo{
+        grid-column: 0/0;
+    }
+    .main{
+        grid-column: 1/7;
+    }
+    .footer img{
+        width: 0;
+        height: 0;
+        
+        
+    }
+    
+    .barranegra{
+        width: 100%;
+        height: 5vh;
+     
+    }
+
+    
+    .info p{
+        width: 100%;
+    }
+
+    .info img{
+        width: 20%;
+    }
+
+
+    .apartados{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center                                    ;
+       
+    }
+    
+    .apartados p{
+        font-size: 0;
+    }
+    .apartados p a{
+        font-size: 1rem;
+    }
+}

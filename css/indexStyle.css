@@ -1,0 +1,233 @@
+
+
+ 
+
+
+
+
+.contenedorPrincipal{
+    display: grid;
+    grid-template-columns: repeat(4,20vw)
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
+    grid-column: 2/6;
+}
+
+.categorias{
+    display: flex;
+    background-color: green;
+    width: 375px;
+}
+
+.categorias a{
+    color: white;
+    width: 125px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.categorias a:hover{
+    color: black;
+}
+
+.primeraParte{
+    display: flex;
+}
+
+.segundaParte{
+    display: flex;
+}
+
+.portada7 a{
+    width: 95px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.terceraParte{
+    display: flex;
+}
+
+.contenedor {
+    position: relative;
+    width: 95px;
+    display: flex;
+    flex-flow: row wrap;
+}
+  
+.contenedor a {
+    position: absolute;
+}
+  
+.contenedor a:hover {
+    opacity: 0;
+}
+
+/*
+.main{
+    grid-column: 2/6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+   
+
+    padding-top: 10vh;
+    
+    
+    
+}
+
+
+.main p{
+    padding-bottom: 10vh;
+}
+*/
+.lateralizquierdo{
+    grid-column: 1/2;
+    height: 95vh;
+ 
+    background-color: green;
+  
+   
+
+
+}
+/*
+.contenedorImg{
+    width: 375px;
+    display: flex;
+    flex: none;
+    flex-flow: row wrap;
+   
+    
+}
+.contenedorTriple{
+    display: flex;
+    width: 95px;
+    flex: none;
+    flex-flow: row wrap;
+    
+    
+}
+.contenedorTriple a{
+display: flex;
+width: 95px;
+}
+
+*/
+
+
+.barranegra{
+    background-color: black;
+  
+}
+
+.footer{
+    display: flex;
+   
+    grid-column: 1/6;
+    
+}
+
+.barranegra{
+    width: 70%;
+ 
+}
+
+.footer img{
+    width: 30%;
+    height: 25px;
+    
+    
+}
+
+.print p{
+    font-size: 0;
+
+}
+
+
+.apartados{
+    grid-column: 1/6;
+    display: flex;
+   
+    justify-content: center;
+  
+   
+    background-color: coral;
+}
+
+.apartados a{
+    text-decoration: none;
+    color: white;
+}
+
+.apartados a:hover{
+    color: black;
+}
+
+
+@media print {
+    /* Aquí irían tus reglas CSS específicas para imprimir */
+
+    .print p{
+        font-size: 1rem;
+    
+    }
+
+}    
+
+
+  @media (max-width: 768px) {
+    .lateralizquierdo{
+        grid-column: 0/0;
+        height: 0;
+    }
+   .main{
+    grid-column: 1/6;
+    height: 80vh;
+   }
+   .footer img{
+    width: 0;
+    height: 0;
+    
+    
+}
+
+.barranegra{
+    width: 100%;
+    height: 20vh;
+ 
+}
+.apartados{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center                                    ;
+   
+}
+
+.apartados p{
+    font-size: 0;
+}
+.apartados p a{
+    font-size: 1rem;
+}
+
+  }
+
+  
+  
+    
+
+
+  
+ 
