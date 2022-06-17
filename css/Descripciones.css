@@ -1,0 +1,98 @@
+
+
+
+body{
+    width: 100%;
+    background-color: darkseagreen;
+}
+
+
+header{
+    height: 120px;
+    display: flex;
+    width: 100%;
+    background-color: #F6FBF4 ;
+    color: black;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.logotipo{
+    display: flex;
+    align-items: baseline;
+}
+
+.logotipo img{
+    margin-right: 10px;
+}
+
+/*Diseño main*/
+
+main{
+    width: 100%;
+    color: black;
+}
+
+.textoInformacion p{
+    padding-bottom: 18px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: x-large;
+    text-align:justify;
+}
+
+.textoInformacion h2{
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align:justify;
+}
+
+
+
+footer{
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: aquamarine;
+    height: 10%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.apartados{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.barraImagen{
+    background-color:black ;
+}
+
+.barraImagen img{
+    display: block;
+    margin-right: auto;
+    opacity: 0.6;
+}
+
+.apartados a{
+    text-decoration: none;
+    color: white;
+}
+.print p{
+    font-size: 0rem;
+
+}
+
+@media print {
+    /* Aquí irían tus reglas CSS específicas para imprimir */
+
+    .print p{
+        font-size: 1rem;
+    
+    }
+
+}   
